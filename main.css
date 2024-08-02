@@ -8,12 +8,15 @@ body > header {
 	background-color: #2f3640;
 	padding: 16px 0;
 	color: #f5f6fa;
+	font-family: "SF Pro",Arial, Helvetica, sans-serif;
+
 }
 
 header .container {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	padding: 0 1%;
 	
 }
 
@@ -28,7 +31,7 @@ header li a {
 }
 
 .container {
-	width: 1366px;
+	width: auto;
 	margin: 0 auto;
 }
 
@@ -36,10 +39,27 @@ header li a {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	font-family: "SF Pro",Arial, Helvetica;
+
+	padding: 0.5% 5% 1%;
 }
 
 .articles article {
-	width: 30%;
+	width: 32%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 1%;
+
+}
+
+.articles h2 {
+	width: 100%;
+	margin: 16px 0;
+	font-family: "SF Pro",Arial, Helvetica, sans-serif;
+	font-weight: 100;
+	font-size: 26pt;
+
 }
 
 .articles article h3 {
@@ -55,7 +75,12 @@ header li a {
 	display: inline-block;
 	text-decoration: none;
 	font-weight: bold;
-	margin-top: 8px;
+	margin-top: auto;
+	width: fit-content;
+}
+
+.articles article p {
+	margin-bottom: 6%;
 }
 
 .articles article a:hover {
@@ -63,8 +88,10 @@ header li a {
 }
 
 .articles article img {
-	height: 180px;
+	height: 300px;
 	width: 100%;
+	object-fit: cover; /* Corta o excesso e mantém a proporção */
+	object-position: center; /* Centraliza a imagem dentro do espaço */
 }
 
 .articles article p,
@@ -93,5 +120,21 @@ section h2 {
 }
 
 #economy .articles article a {
+	color: #f5f6fa;
+}
+
+#entretenimento {
+	background-color: rgba(212, 229, 254, 1);
+}
+
+#entretenimento .articles article a {
+	color: #f5f6fa;
+}
+
+#tecnologia {
+	background-color: rgba(250, 238, 255, 1);
+}
+
+#tecnologia .articles article a {
 	color: #f5f6fa;
 }
